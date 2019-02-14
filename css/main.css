@@ -1935,7 +1935,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa379;
+  background: #162047;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3257,4 +3257,16 @@ blockquote {
   opacity: 1 !important;
   bottom: -120px !important;
   right: -30px !important;
+}
+.post-sticky-flag {
+  font-size: inherit;
+  float: left;
+  color: #000;
+  cursor: help;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.post-sticky-flag:hover {
+  color: #07b39b;
 }
