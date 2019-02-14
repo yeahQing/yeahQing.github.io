@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+  <style>
+    .pace .pace-progress {
+        background: #555; /*进度条颜色*/
+        height: 1.5px;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/leaf_logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.0.0',
+    sidebar: {"position":"left","display":"post","offset":10,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="There can be miracles when you believe">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法汇总">
+<meta property="og:url" content="https://yeahqing.cn/2018/12/10/Markdown语法汇总/index.html">
+<meta property="og:site_name" content="Hi,YeahQing">
+<meta property="og:description" content="There can be miracles when you believe">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://miao.su/images/2018/12/08/code_by_rasmusir-d4a4dj2d378b.jpg">
+<meta property="og:updated_time" content="2019-02-13T15:35:09.799Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown语法汇总">
+<meta name="twitter:description" content="There can be miracles when you believe">
+<meta name="twitter:image" content="https://miao.su/images/2018/12/08/code_by_rasmusir-d4a4dj2d378b.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://yeahqing.cn/2018/12/10/Markdown语法汇总/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Markdown语法汇总 | Hi,YeahQing</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hi,YeahQing</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">简以养德</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">2</span></a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yeahqing.cn/2018/12/10/Markdown语法汇总/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="YeahQing">
+      <meta itemprop="description" content="个人博客,学习笔记,生活随笔">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi,YeahQing">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Markdown语法汇总
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-12-10 19:59:01" itemprop="dateCreated datePublished" datetime="2018-12-10T19:59:01+08:00">2018-12-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-13 23:35:09" itemprop="dateModified" datetime="2019-02-13T23:35:09+08:00">2019-02-13</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><p>There can be miracles when you believe</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>花费了1天时间,使用hexo+next+github创建了自己的博客网站。作为网站的第一篇博客，我一直在想需要写些什么，hexo建站教程?还是NexT主题配置?最后，我发现MarkDown语法的使用会对我未来编写博客产生至关重要的影响。so~就先记录一下markdown的常用语法吧。 –<strong>晔清</strong>2018.12.08 Saturday</p>
+</blockquote>
+<blockquote>
+<p>   更新了hexo引言块的使用方式<br>   hexo音频插件的使用方式<br>   网易云音乐插件的使用<br>   –<strong>晔清</strong>2018.12.09 Sunday</p>
+</blockquote>
+<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><pre><code>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。`&lt;/pre&gt;
+
+Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。
+
+* * *
+
+## [](#标题的使用 &quot;标题的使用&quot;)标题的使用
+
+关于标题的使用，其实是最最简单的，只需要使用`#`就可以啦。
+`#`的多少代表了标题的级别，`#`使用越多，表示标题的级别越低，显示的大小也越小。
+
+* * *
+
+## [](#字体大小的设置 &quot;字体大小的设置&quot;)字体大小的设置
+
+Markdown中支持粗体，斜体还有删除线
+粗体:两个`*`包裹住文字可以实现**加粗**
+斜体:一个`*`包裹住文字可以实现_斜体_
+删除线:两个`~`包裹住文字可以实现&lt;del&gt;删除线&lt;/del&gt;
+
+* * *
+
+## [](#有序or无序列表的使用 &quot;有序or无序列表的使用&quot;)有序or无序列表的使用
+
+### [](#有序列表 &quot;有序列表&quot;)有序列表
+
+只需要使用数字n `n.` 就可以生成有序列表了。
+例如:
+</code></pre><ol>
+<li>有序列表1</li>
+<li>有序列表2</li>
+<li><p>有序列表3</p>
+<h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a><a href="#无序列表" title="无序列表"></a>无序列表</h3><p>可以使用三种符号 <code>*</code>、<code>+</code>、<code>-</code>来生成无序列表<br>例如:</p>
+</li>
+</ol>
+<ul>
+<li><p>无序列表1</p>
+</li>
+<li><p>无序列表2</p>
+</li>
+<li><p>无序列表3</p>
+<hr>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a><a href="#链接" title="链接"></a>链接</h2><p>链接的格式:<code>[title](url)</code><br>例如: <span class="exturl" data-url="aHR0cHM6Ly95ZWFocWluZy5naXRodWIuaW8=" title="https://yeahqing.github.io">晔清的博客<i class="fa fa-external-link"></i></span></p>
+<hr>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a><a href="#图片" title="图片"></a>图片</h2><p>插入图片和链接很相似，只是在链接的格式之前，加上<code>!</code><br>图片的格式为:<code>![title](url)</code><br>例如: <img src="https://miao.su/images/2018/12/08/code_by_rasmusir-d4a4dj2d378b.jpg" alt="CODE"></p>
+<hr>
+<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a><a href="#代码块" title="代码块"></a>代码块</h2><p>可以用<code>hexo</code>自带的代码块来编写<code>codeblock</code><br>具体的使用方法为:</p>
+<pre>`<figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码内容</span><br></pre></td></tr></table></figure>`</pre>
+</li>
+<li><p>[title]:代码的标题</p>
+</li>
+<li>[lang]:使用的语言</li>
+<li>[url]:代码的文本链接</li>
+<li><p>[link text]:链接文本的标题<figure class="highlight java"><figcaption><span>Example.java</span><span class="exturl" data-url="aHR0cHM6Ly95ZWFocWluZy5naXRodWIuaW8=" title="https://yeahqing.github.io">example.java<i class="fa fa-external-link"></i></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">“Welcome to my Blog”</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h2 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a><a href="#引用块" title="引用块"></a>引用块</h2><p>在<code>前言</code>中，我是用的引用块并非Markdown自带，而是hexo的标签插件<code>blockquote</code><br>具体的使用方法为:<br><pre>`<blockquote><p>要展示的内容</p>
+<footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote></pre></p>
+</li>
+<li><p>[author]:添加的作者</p>
+</li>
+<li>[source]:内容来源或者时间</li>
+<li>[link]:内容来源的地址</li>
+<li>[source_link_title]:内容来源地址的标题</li>
+</ul>
+<h2 id="hexo自带的音频插件"><a href="#hexo自带的音频插件" class="headerlink" title="hexo自带的音频插件"></a><a href="#hexo自带的音频插件" title="hexo自带的音频插件"></a>hexo自带的音频插件</h2><p>因为markdown编辑器支持<code>html标签</code>的使用,所以这里可以直接使用<code>&amp;lt;aduio&amp;gt;</code>标签插入音频。<br>但是该方法插入的音频样式很丑,强烈不推荐！<br>这里就要引入hexo自带的音频插件<code>hexo-tag-aplayer</code><br>可以通过<code>npm install hexo-tag-aplayer --save</code>来安装插件<br><strong>(由于版权原因,很多歌曲lrc歌词文件都无法免费获得,这也是hexo音频插件的弊端)</strong><br>示例:</p>
+<p><strong>歌曲</strong><br>        <div id="aplayer-wNKScenn" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById(“aplayer-wNKScenn”),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: “Loving Strangers”,              author: “Jocelyn Pook / Russian Red”,              url: “<a href="http://music.163.com/song/media/outer/url?id=2788529.mp3&quot;">http://music.163.com/song/media/outer/url?id=2788529.mp3&quot;</a>,              pic: “<a href="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2056339422,3737471370&amp;fm=27&amp;gp=0.jpg&quot;">https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2056339422,3737471370&amp;fm=27&amp;gp=0.jpg&quot;</a>,              lrc: “”            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script></p>
+<p>代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;歌曲名&quot; &quot;歌手名&quot; &quot;https://示例.mp3&quot; &quot;https://封面图.jpg&quot; &quot;lrc:https://歌词.lrc&quot; %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>带歌词的歌曲</strong></p>
+<p><div id="aplayer-ihjXfoNF" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"><pre class="aplayer-lrc-content">[00:18.30]Loving strangers ×3[00:25.26]Ahah[00:27.73]Loving strangers ×3[00:34.59]Ah[00:36.07][00:37.39]I’ve got a hole, oh in my pocket[00:46.46]where all the money has gone[00:55.90]I’ve got a whole lot of work to do with your heart[01:04.94]Cuz it’s so busy, mine’s not[01:11.38][01:14.65]Loving strangers ×3[01:21.66]Ahah[01:24.69]Loving strangers ×3[01:31.05]Ah[01:32.32][01:33.70]It’s just the start of the winter[01:39.95]And I’m all alone[01:42.82]But I’ve got my eye right on you[01:48.55][01:52.71]Give me a coin[01:56.83]And I’ll take you to the moon[02:01.60]Now give me a beer[02:05.60]And I’ll kiss you so foolishly[02:08.21]like you do when you lie, when you’re not in my thoughts[02:19.84]like you do when you lie[02:22.31]And I know it’s not my imagination[02:30.67][02:32.86]Loving strangers ×3[02:39.90]Ahah[02:42.53]Loving strangers ×3[02:49.81]Ah[02:51.85][03:11.29]Loving strangers ×3[03:18.05]Nahnahnah[03:20.92]Loving strangers ×3[03:27.76]Ahah…[03:31.90]Ah…[03:43.75]Ah…</pre></div><script>var ap = new APlayer({element: document.getElementById(“aplayer-ihjXfoNF”),narrow: false,autoplay: true,showlrc: 2,music: {title: “Loving Strangers”,author: “Jocelyn Pook / Russian Red”,url: “<a href="http://music.163.com/song/media/outer/url?id=2788529.mp3&quot;,pic">http://music.163.com/song/media/outer/url?id=2788529.mp3&quot;,pic</a>: “<a href="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2056339422,3737471370&amp;fm=27&amp;gp=0.jpg&quot;,}});window.aplayers">https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2056339422,3737471370&amp;fm=27&amp;gp=0.jpg&quot;,}});window.aplayers</a> || (window.aplayers = []);window.aplayers.push(ap);</script><br><strong>歌单</strong><br>        <div id="aplayer-YDjMhkWI" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>  <script>  var options = {“narrow”:false,”autoplay”:false,”showlrc”:3,”mutex”:true,”music”:[{“title”:”Eraser”,”author”:”Ed Sheeran”,”url”:”<a href="http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;,&quot;pic&quot;:&quot;http://www.lrcgc.com/image/cdimg/4162.jpg&quot;,&quot;lrc&quot;:&quot;http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc&quot;},{&quot;title&quot;:&quot;Eraser&quot;,&quot;author&quot;:&quot;Ed">http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;,&quot;pic&quot;:&quot;http://www.lrcgc.com/image/cdimg/4162.jpg&quot;,&quot;lrc&quot;:&quot;http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc&quot;},{&quot;title&quot;:&quot;Eraser&quot;,&quot;author&quot;:&quot;Ed</a> Sheeran”,”url”:”<a href="http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;,&quot;pic&quot;:&quot;http://www.lrcgc.com/image/cdimg/4162.jpg&quot;,&quot;lrc&quot;:&quot;http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc&quot;}]}">http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;,&quot;pic&quot;:&quot;http://www.lrcgc.com/image/cdimg/4162.jpg&quot;,&quot;lrc&quot;:&quot;http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc&quot;}]}</a>;  options.element = document.getElementById(“aplayer-YDjMhkWI”);  var ap = new APlayer(options);    window.aplayers || (window.aplayers = []);  window.aplayers.push(ap);  </script></p>
+<p>代码:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayerlist %&#125;</span><br><span class="line">&#123;</span><br><span class="line">    &quot;autoplay&quot;: false,</span><br><span class="line">    &quot;showlrc&quot;: 3,</span><br><span class="line">    &quot;mutex&quot;: true,</span><br><span class="line">    &quot;music&quot;: [</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;Eraser&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Ed Sheeran&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;<span class="exturl" data-url="aHR0cDovL211c2ljLjE2My5jb20vc29uZy9tZWRpYS9vdXRlci91cmw/aWQ9NDYwMDQzNjk5Lm1wMyZxdW90Ow==" title="http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;">http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;<i class="fa fa-external-link"></i></span>,</span><br><span class="line">            &quot;pic&quot;: &quot;<span class="exturl" data-url="aHR0cDovL3d3dy5scmNnYy5jb20vaW1hZ2UvY2RpbWcvNDE2Mi5qcGcmcXVvdDs=" title="http://www.lrcgc.com/image/cdimg/4162.jpg&quot;">http://www.lrcgc.com/image/cdimg/4162.jpg&quot;<i class="fa fa-external-link"></i></span>,</span><br><span class="line">            &quot;lrc&quot;: &quot;<span class="exturl" data-url="aHR0cDovL3d3dy5scmNnYy5jb20vbHJjLTI3NDEwLTI5MzEyMy9FZCUyMFNoZWVyYW4tRXJhc2VyLmxyYw==" title="http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc">http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc<i class="fa fa-external-link"></i></span>&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;title&quot;: &quot;Eraser&quot;,</span><br><span class="line">            &quot;author&quot;: &quot;Ed Sheeran&quot;,</span><br><span class="line">            &quot;url&quot;: &quot;<span class="exturl" data-url="aHR0cDovL211c2ljLjE2My5jb20vc29uZy9tZWRpYS9vdXRlci91cmw/aWQ9NDYwMDQzNjk5Lm1wMyZxdW90Ow==" title="http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;">http://music.163.com/song/media/outer/url?id=460043699.mp3&quot;<i class="fa fa-external-link"></i></span>,</span><br><span class="line">            &quot;pic&quot;: &quot;<span class="exturl" data-url="aHR0cDovL3d3dy5scmNnYy5jb20vaW1hZ2UvY2RpbWcvNDE2Mi5qcGcmcXVvdDs=" title="http://www.lrcgc.com/image/cdimg/4162.jpg&quot;">http://www.lrcgc.com/image/cdimg/4162.jpg&quot;<i class="fa fa-external-link"></i></span>,</span><br><span class="line">            &quot;lrc&quot;: &quot;<span class="exturl" data-url="aHR0cDovL3d3dy5scmNnYy5jb20vbHJjLTI3NDEwLTI5MzEyMy9FZCUyMFNoZWVyYW4tRXJhc2VyLmxyYw==" title="http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc">http://www.lrcgc.com/lrc-27410-293123/Ed%20Sheeran-Eraser.lrc<i class="fa fa-external-link"></i></span>&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br><span class="line">&#123;% endaplayerlist %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="网易云音乐外链播放器"><a href="#网易云音乐外链播放器" class="headerlink" title="网易云音乐外链播放器"></a><a href="#网易云音乐外链播放器" title="网易云音乐外链播放器"></a>网易云音乐外链播放器</h2><p>目前网易云音乐官方给用户提供了强大的外链播放器<code>iframe</code>插件,不过,弊端还是因为版权问题。<br>代码为网易云音乐平台根据<code>歌曲</code>或<code>歌单</code>自动生成,想了解的朋友可以直接在网页版网易云音乐中找<code>生成外链播放器</code></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1886620&auto=0&height=66"></iframe>
+
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a><a href="#小结" title="小结"></a>小结</h2><p>目前先更新到这里，markdown的功能十分强大，远远不止以上所提，容我有时间再分享给大家。</p>
+<blockquote>
+<p>tips:大家可以在评论区试试Markdown语法，相信你会爱上它滴~</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><a href="#参考资料" title="参考资料"></a>参考资料</h2><p><span class="exturl" data-url="aHR0cHM6Ly9wYW5kYW8uZ2l0aHViLmlvL2VkaXRvci5tZC9pbmRleC5odG1s" title="https://pandao.github.io/editor.md/index.html">Editor.md<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9zeHhrZWFydGguZ2l0aHViLmlvLzIwMTgvMTEvMzAvTmV4dCVFOCU4NyVBQSVFNSVBRSU5QSVFNCVCOSU4OSVFNiVBMCVCNyVFNSVCQyU4Ri8jJUU2JThGJTkyJUU1JTg1JUE1JUU5JTlGJUIzJUU0JUI5JTkw" title="https://sxxkearth.github.io/2018/11/30/Next%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/#%E6%8F%92%E5%85%A5%E9%9F%B3%E4%B9%90">Next自定义css样式的使用<i class="fa fa-external-link"></i></span><br><span class="exturl" data-url="aHR0cHM6Ly9yZXVpeGl5LmdpdGh1Yi5pby90ZWNobm9sb2d5L2NvbXB1dGVyL2NvbXB1dGVyLWFpZGVkLWFydC8yMDE3LzA2LzA5L2hleG8tbmV4dC1vcHRpbWl6YXRpb24uaHRtbCMlRTYlOTYlODclRTclQUIlQTAlRTYlOTElOTglRTglQTYlODElRTUlOUIlQkUlRTclODklODc=" title="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81%E5%9B%BE%E7%89%87">打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化<i class="fa fa-external-link"></i></span></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/10/Hexo建站基本教程/" rel="prev" title="Hexo建站基本教程">
+                Hexo建站基本教程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="YeahQing">
+            
+              <p class="site-author-name" itemprop="name">YeahQing</p>
+              <p class="site-description motion-element" itemprop="description">个人博客,学习笔记,生活随笔</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="GitHub &rarr; https://github.com/yourname"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="bWFpbHRvOnlvdXJuYW1lQGdtYWlsLmNvbQ==" title="E-Mail &rarr; mailto:yourname@gmail.com"><i class="fa fa-fw fa-envelope"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="Weibo &rarr; https://weibo.com/yourname"><i class="fa fa-fw fa-weibo"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown简介"><span class="nav-text">Markdown简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#无序列表"><span class="nav-text">无序列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链接"><span class="nav-text">链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码块"><span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用块"><span class="nav-text">引用块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo自带的音频插件"><span class="nav-text">hexo自带的音频插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网易云音乐外链播放器"><span class="nav-text">网易云音乐外链播放器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-text">小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">晔清的博客</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="/js/src/js.cookie.js?v=7.0.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=7.0.0"></script>
+
+
+  
+  <script src="/js/src/exturl.js?v=7.0.0"></script>
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":100,"height":250},"mobile":{"show":false}});</script></body>
+</html>
