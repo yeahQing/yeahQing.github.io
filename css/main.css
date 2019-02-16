@@ -970,6 +970,9 @@ pre .javascript .function {
   border-top: 3px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 @media (max-width: 413px) {
   .post-body .tabs ul.nav-tabs li.tab {
@@ -1757,6 +1760,16 @@ pre .javascript .function {
 .rtl.post-title {
   font-family: UKIJ Ekran;
 }
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1935,7 +1948,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5890ff;
+  background: #e5b85d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3106,7 +3119,8 @@ body {
   transition-delay: 0s;
 }
 .posts-expand .post-tags a:hover {
-  background: #eee;
+  background: transparent;
+  border: 1px solid #fff;
 }
 .post-widgets {
   padding-top: 0px;
