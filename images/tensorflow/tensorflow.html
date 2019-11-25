@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+  <style>
+    .pace .pace-progress {
+        background: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%); /*进度条颜色*/
+        height: 1.5px;
+    }
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/leaf_for_apple.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/images/leaf_logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.0.0',
+    sidebar: {"position":"right","display":"post","offset":10,"b2t":true,"scrollpercent":false,"onmobile":true},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Read saying here.">
+<meta name="keywords" content="tensorflow,深度学习">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tensorflow">
+<meta property="og:url" content="https://yeahqing.cn/images/tensorflow/tensorflow.html">
+<meta property="og:site_name" content="Hi,YeahQing">
+<meta property="og:description" content="Read saying here.">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/images/tensorlow/image-20191124164541870.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124164832545.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124165041433.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124165908991.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124170424581.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124170834459.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124171117099.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124171201735.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124171933023.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124172040081.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124172405960.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124171842585.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124172603264.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124172653530.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124173245545.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124174149883.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124174506421.png">
+<meta property="og:image" content="https://yeahqing.cn/images/tensorflow/image-20191124174845427.png">
+<meta property="og:updated_time" content="2019-11-25T17:02:22.258Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tensorflow">
+<meta name="twitter:description" content="Read saying here.">
+<meta name="twitter:image" content="https://yeahqing.cn/images/tensorflow/images/tensorlow/image-20191124164541870.png">
+
+
+
+
+
+
+  <link rel="canonical" href="https://yeahqing.cn/images/tensorflow/tensorflow.html">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Tensorflow | Hi,YeahQing</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hi,YeahQing</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">简以养德</h1>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">13</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">8</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">12</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-links">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/links/" rel="section"><i class="menu-item-icon fa fa-fw fa-link"></i> <br>Links</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h2 class="post-title" itemprop="name headline">Tensorflow
+
+</h2>
+
+<div class="post-meta">
+  
+  
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          <li><a href="/images/">IMAGES</a></li>
+        
+      
+    
+      
+      
+        
+          <li>TENSORFLOW</li>
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          <li><a href="/images/tensorflow.html/">TENSORFLOW.HTML</a></li>
+        
+      
+    
+  </ul>
+
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <blockquote class="blockquote-center"><p>Read saying here.</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="Anaconda-Tensorflow2-0稳定版安装教程"><a href="#Anaconda-Tensorflow2-0稳定版安装教程" class="headerlink" title="Anaconda Tensorflow2.0稳定版安装教程"></a>Anaconda Tensorflow2.0稳定版安装教程</h1><h2 id="Anaconda安装"><a href="#Anaconda安装" class="headerlink" title="Anaconda安装"></a>Anaconda安装</h2><p><img src="images/tensorlow/image-20191124164541870.png" alt="image-20191124164541870"></p>
+<p>国内因为某些原因，可以在清华镜像站下载。</p>
+<blockquote>
+<p>Anaconda默认自带python，所以无需提前下载python</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9taXJyb3JzLnR1bmEudHNpbmdodWEuZWR1LmNuL2FuYWNvbmRhL2FyY2hpdmUv" title="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">清华镜像站<i class="fa fa-external-link"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYW5hY29uZGEuY29tL2Rpc3RyaWJ1dGlvbi8jZG93bmxvYWQtc2VjdGlvbg==" title="https://www.anaconda.com/distribution/#download-section">Anaconda官网<i class="fa fa-external-link"></i></span></p>
+<p><img src="image-20191124164832545.png" alt="image-20191124164832545"></p>
+<p><img src="image-20191124165041433.png" alt="image-20191124165041433"></p>
+<blockquote>
+<p>此处两个高级设置的解释:</p>
+<ol>
+<li>将Anaconda添加到环境变量中。(无需勾选)</li>
+<li>可以让其他IDE检测到Anaconda的Python。(勾选后可以在Anaconda之外的环境中使用python,比如VC)</li>
+</ol>
+</blockquote>
+<h2 id="Tensorflow2-0安装"><a href="#Tensorflow2-0安装" class="headerlink" title="Tensorflow2.0安装"></a>Tensorflow2.0安装</h2><p>按照Tensorflow官网的提示安装<span class="exturl" data-url="aHR0cHM6Ly93d3cudGVuc29yZmxvdy5vcmcvP2hsPXpoLWNu" title="https://www.tensorflow.org/?hl=zh-cn">Tensorflow官网<i class="fa fa-external-link"></i></span></p>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建虚拟环境</span></span><br><span class="line"><span class="comment"># 因为目前tensorflow不支持python3.8 所以这里指定创建python版本为3.7</span></span><br><span class="line">conda create -n tensorflow2 pip python=<span class="number">3.7</span></span><br><span class="line"><span class="comment"># 进入环境</span></span><br><span class="line">conda activate tensorflow2</span><br><span class="line"><span class="comment"># 安装tensorflow</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此处安装的为cpu版本</span></span><br><span class="line"><span class="comment"># 官网推荐使用pip方式安装，本人觉得这里使用pip更快，而使用conda的清华源可能找不到支持最新版本的tensorflow</span></span><br><span class="line"><span class="comment"># conda install tensorflow</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装tensorflow-gpu(可选)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># conda install tensorflow-gpu</span></span><br><span class="line"><span class="comment"># 这里如果使用pip安装,不会同时安装CUDA和cuDNN,需要自己去Nvidia官网下载,之后详细说明</span></span><br><span class="line"><span class="comment"># 需要注意的是，请首先安装CUDA和cuDNN后，在安装tensorflow-gpu，否则可能无法切换到gpu模式</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
+<p><img src="image-20191124165908991.png" alt="image-20191124165908991"></p>
+<p>使用<code>conda list</code>查看是否安装成功</p>
+<p><img src="image-20191124170424581.png" alt="image-20191124170424581"></p>
+<h3 id="CUDA以及cuDNN的安装方法"><a href="#CUDA以及cuDNN的安装方法" class="headerlink" title="CUDA以及cuDNN的安装方法"></a>CUDA以及cuDNN的安装方法</h3><p>cuDNN: <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9yZHAvY3Vkbm4tYXJjaGl2ZQ==" title="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive<i class="fa fa-external-link"></i></span> </p>
+<p>CUDA:  <span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubnZpZGlhLmNvbS9jdWRhLXRvb2xraXQtYXJjaGl2ZQ==" title="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive<i class="fa fa-external-link"></i></span> </p>
+<blockquote>
+<p>此处需要注意的是，应该选择tensorflow支持的版本下载，我安装的时候，tensorflow2.0支持CUDA10.0，cuDNN版本需要为大于7.4.1</p>
+</blockquote>
+<p><img src="image-20191124170834459.png" alt="image-20191124170834459"></p>
+<h3 id="安装CUDA"><a href="#安装CUDA" class="headerlink" title="安装CUDA"></a>安装CUDA</h3><p><img src="image-20191124171117099.png" alt="image-20191124171117099"></p>
+<p>在官网找到CUDA Toolkit 10.0</p>
+<p><img src="image-20191124171201735.png" alt="image-20191124171201735"></p>
+<blockquote>
+<p>需要注意，在安装CUDA Toolkit 10.0 之前，电脑需要安装Visual Studio 2017</p>
+</blockquote>
+<p><img src="image-20191124171933023.png" alt="image-20191124171933023">、</p>
+<p>不需要勾选Visual Studio Integration，因为可能会导致安装失败，且不安装此项并不会影响使用。</p>
+<p><img src="image-20191124172040081.png" alt="image-20191124172040081"></p>
+<blockquote>
+<p>注意，此处如果你的电脑中已经安装了英伟达的驱动程序，且已经是最新版，那么无需勾选剩余的选项，如果您的驱动程序当前版本没有新版本高，那么勾选即可。此外，还需要查看你的显卡驱动信息。</p>
+</blockquote>
+<p>NVIDIA控制面板-&gt;帮助-&gt;系统信息-&gt;组件 查看显卡驱动支持的CUDA版本</p>
+<p><img src="image-20191124172405960.png" alt="image-20191124172405960"></p>
+<h3 id="安装cuDNN"><a href="#安装cuDNN" class="headerlink" title="安装cuDNN"></a>安装cuDNN</h3><p>因为CUDA版本为10.0,所以需要下载与其匹配的cuDNN</p>
+<p><img src="image-20191124171842585.png" alt="image-20191124171842585"></p>
+<p>解压缩文件后，将cuda目录下的三个文件夹复制到CUDA安装目录下</p>
+<p><img src="image-20191124172603264.png" alt="image-20191124172603264"></p>
+<p>默认目录为C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0</p>
+<p><img src="image-20191124172653530.png" alt="image-20191124172653530"></p>
+<p>进入目录复制即可，之后配置环境变量</p>
+<p>因为CUDA安装成功后，已经默认配置了环境变量，所以只需要添加这*标的一条即可</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\bin <span class="comment"># 默认添加</span></span><br><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\libnvvp <span class="comment"># 默认添加</span></span><br><span class="line">* C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\lib\x64 <span class="comment"># 手动添加</span></span><br></pre></td></tr></table></figure>
+<p>打开Anaconda prompt，输入nvcc -V 查看是否安装成功</p>
+<p><img src="image-20191124173245545.png" alt="image-20191124173245545"></p>
+<p>如果出现上图所示的内容，则安装成功。</p>
+<h2 id="测试tensorflow"><a href="#测试tensorflow" class="headerlink" title="测试tensorflow"></a>测试tensorflow</h2><h3 id="Anaconda-prompt"><a href="#Anaconda-prompt" class="headerlink" title="Anaconda prompt"></a>Anaconda prompt</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装ipython</span></span><br><span class="line">conda install ipython</span><br><span class="line"><span class="comment"># 安装jupyter</span></span><br><span class="line">conda install jupyter</span><br><span class="line"><span class="comment"># 打开notebook</span></span><br><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+<h3 id="Anaconda-Navigator"><a href="#Anaconda-Navigator" class="headerlink" title="Anaconda Navigator"></a>Anaconda Navigator</h3><p><code>Win+S</code>搜索Anaconda Navigator</p>
+<p><img src="image-20191124174149883.png" alt="image-20191124174149883"></p>
+<h2 id="测试安装结果"><a href="#测试安装结果" class="headerlink" title="测试安装结果"></a>测试安装结果</h2><p>如果你安装的是tensorflow cpu版本，那么可以通过如下方式测试</p>
+<p><img src="image-20191124174506421.png" alt="image-20191124174506421"></p>
+<p>如果你安装的是tensorflow-gpu版本，那么可以通过如下方式，检测是否处于gpu工作模式</p>
+<p><img src="image-20191124174845427.png" alt="image-20191124174845427"></p>
+<blockquote>
+<p>如果output为空，则证明为cpu模式</p>
+</blockquote>
+<h2 id="运行官方案例"><a href="#运行官方案例" class="headerlink" title="运行官方案例"></a>运行官方案例</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 引入tensorflow</span></span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检测是否为gpu模式</span></span><br><span class="line">tf.test.gpu_device_name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取mnist数据集</span></span><br><span class="line">mnist = tf.keras.datasets.mnist</span><br><span class="line"></span><br><span class="line"><span class="comment"># 载入mnist数据集</span></span><br><span class="line">(x_train, y_train), (x_test, y_test) = mnist.load_data()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将样本从整数转换为浮点数</span></span><br><span class="line">x_train, x_test = x_train / <span class="number">255.0</span>, x_test / <span class="number">255.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 搭建模型</span></span><br><span class="line">model = tf.keras.models.Sequential([</span><br><span class="line">  tf.keras.layers.Flatten(input_shape=(<span class="number">28</span>, <span class="number">28</span>)),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>),</span><br><span class="line">  tf.keras.layers.Dropout(<span class="number">0.2</span>),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">'softmax'</span>)</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为模型选择优化器和损失函数</span></span><br><span class="line">model.compile(optimizer=<span class="string">'adam'</span>,</span><br><span class="line">              loss=<span class="string">'sparse_categorical_crossentropy'</span>,</span><br><span class="line">              metrics=[<span class="string">'accuracy'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model.fit(x_train, y_train, epochs=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 评估模型</span></span><br><span class="line">model.evaluate(x_test,  y_test, verbose=<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+
+
+  
+  
+  <ul class="breadcrumb">
+    
+      
+      
+        
+          
+            
+          
+          <li><a href="/images/">IMAGES</a></li>
+        
+      
+    
+      
+      
+        
+          <li>TENSORFLOW</li>
+        
+      
+    
+      
+      
+        
+          
+            
+          
+          <li><a href="/images/tensorflow.html/">TENSORFLOW.HTML</a></li>
+        
+      
+    
+  </ul>
+
+
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avtar.jpg" alt="YeahQing">
+            
+              <p class="site-author-name" itemprop="name">YeahQing</p>
+              <p class="site-description motion-element" itemprop="description">个人博客,学习笔记,生活随笔</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9kZXYudGVuY2VudC5jb20vdS9ZZWFoUWluZw==" title="Coding &rarr; https://dev.tencent.com/u/YeahQing"><i class="fa fa-fw fa-github-alt"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="bWFpbHRvOmtvdW5pZDVAZ21haWwuY29t" title="E-Mail &rarr; mailto:kounid5@gmail.com"><i class="fa fa-fw fa-envelope"></i></span>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llYWhRaW5n" title="Github &rarr; https://github.com/yeahQing"><i class="fa fa-fw fa-github"></i></span>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Anaconda-Tensorflow2-0稳定版安装教程"><span class="nav-text">Anaconda Tensorflow2.0稳定版安装教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Anaconda安装"><span class="nav-text">Anaconda安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tensorflow2-0安装"><span class="nav-text">Tensorflow2.0安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤"><span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CUDA以及cuDNN的安装方法"><span class="nav-text">CUDA以及cuDNN的安装方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装CUDA"><span class="nav-text">安装CUDA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装cuDNN"><span class="nav-text">安装cuDNN</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试tensorflow"><span class="nav-text">测试tensorflow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda-prompt"><span class="nav-text">Anaconda prompt</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda-Navigator"><span class="nav-text">Anaconda Navigator</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试安装结果"><span class="nav-text">测试安装结果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运行官方案例"><span class="nav-text">运行官方案例</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-leaf"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">晔清的博客</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=7.0.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script src="/js/src/exturl.js?v=7.0.0"></script>
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":100,"height":250,"opacity":"1;","bottom":"-120px;"},"mobile":{"show":false}});</script></body>
+</html>
