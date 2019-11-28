@@ -15,7 +15,7 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -114,7 +114,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tensorflow">
 <meta property="og:url" content="https://yeahqing.cn/images/tensorflow/tensorflow.html">
-<meta property="og:site_name" content="Hi,YeahQing">
+<meta property="og:site_name" content="Hi,YeahQing!">
 <meta property="og:description" content="Read saying here.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://yeahqing.cn/images/tensorflow/images/tensorlow/image-20191124164541870.png">
@@ -156,7 +156,7 @@
   };
 </script>
 
-  <title>Tensorflow | Hi,YeahQing</title>
+  <title>Tensorflow | Hi,YeahQing!</title>
   
 
 
@@ -197,7 +197,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -207,7 +207,7 @@
   <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -215,7 +215,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hi,YeahQing</span>
+        <span class="site-title">Hi,YeahQing!</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -296,7 +296,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">15</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">13</span></a>
 
   </li>
         
@@ -315,7 +315,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">8</span></a>
 
   </li>
         
@@ -494,7 +494,7 @@
 </ol>
 </blockquote>
 <h2 id="Tensorflow2-0安装"><a href="#Tensorflow2-0安装" class="headerlink" title="Tensorflow2.0安装"></a>Tensorflow2.0安装</h2><p>按照Tensorflow官网的提示安装<span class="exturl" data-url="aHR0cHM6Ly93d3cudGVuc29yZmxvdy5vcmcvP2hsPXpoLWNu" title="https://www.tensorflow.org/?hl=zh-cn">Tensorflow官网<i class="fa fa-external-link"></i></span></p>
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建虚拟环境</span></span><br><span class="line"><span class="comment"># 因为目前tensorflow不支持python3.8 所以这里指定创建python版本为3.7</span></span><br><span class="line">conda create -n tensorflow2 pip python=<span class="number">3.7</span></span><br><span class="line"><span class="comment"># 进入环境</span></span><br><span class="line">conda activate tensorflow2</span><br><span class="line"><span class="comment"># 安装tensorflow</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此处安装的为cpu版本</span></span><br><span class="line"><span class="comment"># 官网推荐使用pip方式安装，本人觉得这里使用pip更快，而使用conda的清华源可能找不到支持最新版本的tensorflow</span></span><br><span class="line"><span class="comment"># conda install tensorflow</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装tensorflow-gpu(可选)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># conda install tensorflow-gpu</span></span><br><span class="line"><span class="comment"># 这里如果使用pip安装,不会同时安装CUDA和cuDNN,需要自己去Nvidia官网下载,之后详细说明</span></span><br><span class="line"><span class="comment"># 需要注意的是，请首先安装CUDA和cuDNN后，在安装tensorflow-gpu，否则可能无法切换到gpu模式</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建虚拟环境</span></span><br><span class="line"><span class="comment"># 因为目前tensorflow不支持python3.8 所以这里指定创建python版本为3.7</span></span><br><span class="line">conda create -n tensorflow2 pip python=<span class="number">3.7</span></span><br><span class="line"><span class="comment"># 进入环境</span></span><br><span class="line">conda activate tensorflow2</span><br><span class="line"><span class="comment"># 安装tensorflow</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 此处安装的为cpu版本</span></span><br><span class="line"><span class="comment"># 官网推荐使用pip方式安装，本人觉得这里使用pip更快，而使用conda的清华源可能找不到支持最新版本的tensorflow</span></span><br><span class="line"><span class="comment"># conda install tensorflow</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装tensorflow-gpu(可选)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># conda install tensorflow-gpu</span></span><br><span class="line"><span class="comment"># 这里如果使用pip安装,不会同时安装CUDA和cuDNN,需要自己去Nvidia官网下载,之后详细说明</span></span><br><span class="line"><span class="comment"># 需要注意的是，请首先安装CUDA和cuDNN后，在安装tensorflow-gpu，否则可能无法切换到gpu模式</span></span><br><span class="line">pip install --ignore-installed --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure>
 <p><img src="image-20191124165908991.png" alt="image-20191124165908991"></p>
 <p>使用<code>conda list</code>查看是否安装成功</p>
 <p><img src="image-20191124170424581.png" alt="image-20191124170424581"></p>
@@ -526,11 +526,11 @@
 <p><img src="image-20191124172653530.png" alt="image-20191124172653530"></p>
 <p>进入目录复制即可，之后配置环境变量</p>
 <p>因为CUDA安装成功后，已经默认配置了环境变量，所以只需要添加这*标的一条即可</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\bin <span class="comment"># 默认添加</span></span><br><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\libnvvp <span class="comment"># 默认添加</span></span><br><span class="line">* C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\lib\x64 <span class="comment"># 手动添加</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\bin <span class="comment"># 默认添加</span></span><br><span class="line">C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\libnvvp <span class="comment"># 默认添加</span></span><br><span class="line">* C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10<span class="number">.0</span>\lib\x64 <span class="comment"># 手动添加</span></span><br></pre></td></tr></table></figure>
 <p>打开Anaconda prompt，输入nvcc -V 查看是否安装成功</p>
 <p><img src="image-20191124173245545.png" alt="image-20191124173245545"></p>
 <p>如果出现上图所示的内容，则安装成功。</p>
-<h2 id="测试tensorflow"><a href="#测试tensorflow" class="headerlink" title="测试tensorflow"></a>测试tensorflow</h2><h3 id="Anaconda-prompt"><a href="#Anaconda-prompt" class="headerlink" title="Anaconda prompt"></a>Anaconda prompt</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装ipython</span></span><br><span class="line">conda install ipython</span><br><span class="line"><span class="comment"># 安装jupyter</span></span><br><span class="line">conda install jupyter</span><br><span class="line"><span class="comment"># 打开notebook</span></span><br><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+<h2 id="测试tensorflow"><a href="#测试tensorflow" class="headerlink" title="测试tensorflow"></a>测试tensorflow</h2><h3 id="Anaconda-prompt"><a href="#Anaconda-prompt" class="headerlink" title="Anaconda prompt"></a>Anaconda prompt</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装ipython</span></span><br><span class="line">conda install ipython</span><br><span class="line"><span class="comment"># 安装jupyter</span></span><br><span class="line">conda install jupyter</span><br><span class="line"><span class="comment"># 打开notebook</span></span><br><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
 <h3 id="Anaconda-Navigator"><a href="#Anaconda-Navigator" class="headerlink" title="Anaconda Navigator"></a>Anaconda Navigator</h3><p><code>Win+S</code>搜索Anaconda Navigator</p>
 <p><img src="image-20191124174149883.png" alt="image-20191124174149883"></p>
 <h2 id="测试安装结果"><a href="#测试安装结果" class="headerlink" title="测试安装结果"></a>测试安装结果</h2><p>如果你安装的是tensorflow cpu版本，那么可以通过如下方式测试</p>
@@ -540,7 +540,7 @@
 <blockquote>
 <p>如果output为空，则证明为cpu模式</p>
 </blockquote>
-<h2 id="运行官方案例"><a href="#运行官方案例" class="headerlink" title="运行官方案例"></a>运行官方案例</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 引入tensorflow</span></span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检测是否为gpu模式</span></span><br><span class="line">tf.test.gpu_device_name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取mnist数据集</span></span><br><span class="line">mnist = tf.keras.datasets.mnist</span><br><span class="line"></span><br><span class="line"><span class="comment"># 载入mnist数据集</span></span><br><span class="line">(x_train, y_train), (x_test, y_test) = mnist.load_data()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将样本从整数转换为浮点数</span></span><br><span class="line">x_train, x_test = x_train / <span class="number">255.0</span>, x_test / <span class="number">255.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 搭建模型</span></span><br><span class="line">model = tf.keras.models.Sequential([</span><br><span class="line">  tf.keras.layers.Flatten(input_shape=(<span class="number">28</span>, <span class="number">28</span>)),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>),</span><br><span class="line">  tf.keras.layers.Dropout(<span class="number">0.2</span>),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">'softmax'</span>)</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为模型选择优化器和损失函数</span></span><br><span class="line">model.compile(optimizer=<span class="string">'adam'</span>,</span><br><span class="line">              loss=<span class="string">'sparse_categorical_crossentropy'</span>,</span><br><span class="line">              metrics=[<span class="string">'accuracy'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model.fit(x_train, y_train, epochs=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 评估模型</span></span><br><span class="line">model.evaluate(x_test,  y_test, verbose=<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="运行官方案例"><a href="#运行官方案例" class="headerlink" title="运行官方案例"></a>运行官方案例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 引入tensorflow</span></span><br><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检测是否为gpu模式</span></span><br><span class="line">tf.test.gpu_device_name()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取mnist数据集</span></span><br><span class="line">mnist = tf.keras.datasets.mnist</span><br><span class="line"></span><br><span class="line"><span class="comment"># 载入mnist数据集</span></span><br><span class="line">(x_train, y_train), (x_test, y_test) = mnist.load_data()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将样本从整数转换为浮点数</span></span><br><span class="line">x_train, x_test = x_train / <span class="number">255.0</span>, x_test / <span class="number">255.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 搭建模型</span></span><br><span class="line">model = tf.keras.models.Sequential([</span><br><span class="line">  tf.keras.layers.Flatten(input_shape=(<span class="number">28</span>, <span class="number">28</span>)),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>),</span><br><span class="line">  tf.keras.layers.Dropout(<span class="number">0.2</span>),</span><br><span class="line">  tf.keras.layers.Dense(<span class="number">10</span>, activation=<span class="string">'softmax'</span>)</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 为模型选择优化器和损失函数</span></span><br><span class="line">model.compile(optimizer=<span class="string">'adam'</span>,</span><br><span class="line">              loss=<span class="string">'sparse_categorical_crossentropy'</span>,</span><br><span class="line">              metrics=[<span class="string">'accuracy'</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 训练模型</span></span><br><span class="line">model.fit(x_train, y_train, epochs=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 评估模型</span></span><br><span class="line">model.evaluate(x_test,  y_test, verbose=<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
 
         
       </div>
@@ -595,6 +595,10 @@
           
 
   
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
 
 
 
@@ -631,7 +635,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avtar.jpg" alt="YeahQing">
             
@@ -658,8 +662,6 @@
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
                     
-                    
-                      
                     
                       
                     
@@ -716,10 +718,6 @@
                     
                       
                     
-                      
-                    
-                      
-                    
                     <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -739,7 +737,7 @@
                   
                     
                   
-                  <span class="exturl" data-url="aHR0cHM6Ly9kZXYudGVuY2VudC5jb20vdS9ZZWFoUWluZw==" title="Coding &rarr; https://dev.tencent.com/u/YeahQing"><i class="fa fa-fw fa-github-alt"></i></span>
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llYWhRaW5n" title="Github &rarr; https://github.com/yeahQing"><i class="fa fa-fw fa-github-alt"></i></span>
                 </span>
               
                 <span class="links-of-author-item">
@@ -749,15 +747,6 @@
                     
                   
                   <span class="exturl" data-url="bWFpbHRvOmtvdW5pZDVAZ21haWwuY29t" title="E-Mail &rarr; mailto:kounid5@gmail.com"><i class="fa fa-fw fa-envelope"></i></span>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
-                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llYWhRaW5n" title="Github &rarr; https://github.com/yeahQing"><i class="fa fa-fw fa-github"></i></span>
                 </span>
               
             </div>
@@ -965,6 +954,32 @@
 
 
   
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '89eee265a65f44e0e4c8',
+    clientSecret: 'a8244029c12455a719d0a905658295742803c039',
+    repo: 'GitTalkForBlog',
+    owner: 'YeahQing',
+    admin: ['YeahQing'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
@@ -1007,5 +1022,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":100,"height":250,"opacity":"1;","bottom":"-120px;"},"mobile":{"show":false}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-tororo"},"display":{"position":"right","width":100,"height":250,"opacity":"1;","bottom":"-120px;"},"mobile":{"show":false}});</script></body>
 </html>

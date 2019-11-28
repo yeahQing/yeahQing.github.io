@@ -15,7 +15,7 @@
 
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -114,7 +114,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="修改Next主题的上下页顺序">
 <meta property="og:url" content="https://yeahqing.cn/posts/bd22c035.html">
-<meta property="og:site_name" content="Hi,YeahQing">
+<meta property="og:site_name" content="Hi,YeahQing!">
 <meta property="og:description" content="What we have is timeless.My love is endless.你我拥有的，是天长地久；我对你的爱意，无穷无尽。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-02-14T14:36:25.870Z">
@@ -137,7 +137,7 @@
   };
 </script>
 
-  <title>修改Next主题的上下页顺序 | Hi,YeahQing</title>
+  <title>修改Next主题的上下页顺序 | Hi,YeahQing!</title>
   
 
 
@@ -178,7 +178,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -188,7 +188,7 @@
   <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -196,7 +196,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hi,YeahQing</span>
+        <span class="site-title">Hi,YeahQing!</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -277,7 +277,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">15</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">13</span></a>
 
   </li>
         
@@ -296,7 +296,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">8</span></a>
 
   </li>
         
@@ -383,21 +383,21 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://yeahqing.cn/posts/bd22c035.html">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="YeahQing">
       <meta itemprop="description" content="个人博客,学习笔记,生活随笔">
       <meta itemprop="image" content="/images/avtar.jpg">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hi,YeahQing">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi,YeahQing!">
     </span>
 
     
@@ -453,7 +453,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Next/" itemprop="url" rel="index"><span itemprop="name">Next</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Next/" itemprop="url" rel="index"><span itemprop="name">Next</span></a></span>
 
                 
                 
@@ -506,9 +506,9 @@
 <p><code>swig</code>是Next使用的模板引擎。</p>
 </blockquote>
 <p>修改其为如下格式</p>
-<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index and (post.prev or post.next) %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav"</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav-prev post-nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> post.prev %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(post.prev.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"prev"</span> <span class="attr">title</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; post.prev.title &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-chevron-left"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> </span><span class="template-variable">&#123;&#123; post.prev.title &#125;&#125;</span><span class="xml"> </span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-nav-divider"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav-next post-nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> post.next %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(post.next.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"next"</span> <span class="attr">title</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; post.next.title &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                </span><span class="template-variable">&#123;&#123; post.next.title &#125;&#125;</span><span class="xml"> <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-chevron-right"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> not is_index and (post.prev or post.next) %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">   <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav"</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav-prev post-nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> post.prev %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(post.prev.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"prev"</span> <span class="attr">title</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; post.prev.title &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-chevron-left"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> </span><span class="template-variable">&#123;&#123; post.prev.title &#125;&#125;</span><span class="xml"> </span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"post-nav-divider"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-nav-next post-nav-item"</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">if</span></span> post.next %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(post.next.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"next"</span> <span class="attr">title</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; post.next.title &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span>&gt;</span></span></span><br><span class="line"><span class="xml">                </span><span class="template-variable">&#123;&#123; post.next.title &#125;&#125;</span><span class="xml"> <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-chevron-right"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br><span class="line"><span class="xml">            </span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span><span class="template-tag">&#123;% <span class="name"><span class="name">endif</span></span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
 <h2 id="添加自定义样式"><a href="#添加自定义样式" class="headerlink" title="添加自定义样式"></a>添加自定义样式</h2><p>文件的路径:<code>博客根目录\themes\next\source\css\_custom\custom.styl</code><br>打开custom.styl文件，在其中添加如下代码</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-nav-prev</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-nav-next</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.post-nav-prev</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.post-nav-next</span>&#123;</span><br><span class="line">    <span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><code>custom.styl</code>:用户自定义样式文件。</p>
 </blockquote>
@@ -613,6 +613,10 @@
           
 
   
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
 
 
 
@@ -649,7 +653,7 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="/images/avtar.jpg" alt="YeahQing">
             
@@ -676,8 +680,6 @@
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
                     
-                    
-                      
                     
                       
                     
@@ -734,10 +736,6 @@
                     
                       
                     
-                      
-                    
-                      
-                    
                     <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -757,7 +755,7 @@
                   
                     
                   
-                  <span class="exturl" data-url="aHR0cHM6Ly9kZXYudGVuY2VudC5jb20vdS9ZZWFoUWluZw==" title="Coding &rarr; https://dev.tencent.com/u/YeahQing"><i class="fa fa-fw fa-github-alt"></i></span>
+                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llYWhRaW5n" title="Github &rarr; https://github.com/yeahQing"><i class="fa fa-fw fa-github-alt"></i></span>
                 </span>
               
                 <span class="links-of-author-item">
@@ -767,15 +765,6 @@
                     
                   
                   <span class="exturl" data-url="bWFpbHRvOmtvdW5pZDVAZ21haWwuY29t" title="E-Mail &rarr; mailto:kounid5@gmail.com"><i class="fa fa-fw fa-envelope"></i></span>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                  
-                    
-                  
-                  <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3llYWhRaW5n" title="Github &rarr; https://github.com/yeahQing"><i class="fa fa-fw fa-github"></i></span>
                 </span>
               
             </div>
@@ -983,6 +972,32 @@
 
 
   
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '89eee265a65f44e0e4c8',
+    clientSecret: 'a8244029c12455a719d0a905658295742803c039',
+    repo: 'GitTalkForBlog',
+    owner: 'YeahQing',
+    admin: ['YeahQing'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
@@ -1025,5 +1040,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":100,"height":250,"opacity":"1;","bottom":"-120px;"},"mobile":{"show":false}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"live2d-widget-model-tororo"},"display":{"position":"right","width":100,"height":250,"opacity":"1;","bottom":"-120px;"},"mobile":{"show":false}});</script></body>
 </html>
