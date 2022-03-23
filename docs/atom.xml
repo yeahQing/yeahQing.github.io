@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">晔清的博客</title>
+    <subtitle type="html">晔清的博客, 记录学习编程过程中的问题</subtitle>
+    <updated>2022-03-24T00:28:11&#43;08:00</updated>
+    <id>https://yeahqing.cn/</id>
+    <link rel="alternate" type="text/html" href="https://yeahqing.cn/" />
+    <link rel="self" type="application/atom&#43;xml" href="https://yeahqing.cn/atom.xml" />
+    <author>
+            <name>YeahQing</name>
+            <uri>https://yeahqing.cn/</uri>
+            
+                <email>kounid5@gmail.com</email>
+            </author>
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    <generator uri="https://gohugo.io/" version="0.96.0-DEV">Hugo</generator>
+        <entry>
+            <title type="text">Go程序设计语言-第二章</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/go-learn-ch2/" />
+            <id>https://yeahqing.cn/posts/go-learn-ch2/</id>
+            <updated>2022-03-24T00:25:13&#43;08:00</updated>
+            <published>2022-03-24T00:14:34&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Go程序设计语言 第二章总结</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Go程序设计语言-第一章</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/go-learn-ch1/" />
+            <id>https://yeahqing.cn/posts/go-learn-ch1/</id>
+            <updated>2022-03-24T00:25:10&#43;08:00</updated>
+            <published>2022-03-23T23:54:58&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Go程序设计语言 第一章总结</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Go学习提要</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/go-learn-notes/" />
+            <id>https://yeahqing.cn/posts/go-learn-notes/</id>
+            <updated>2022-03-24T00:25:16&#43;08:00</updated>
+            <published>2022-03-23T23:48:39&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">这篇文章是我的Go语言学习规划,未来会将其和其他文章链接到一起。</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/golang/" term="Golang" label="Golang" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">安装说明-Redis_6.2.6</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/redis-install-note/" />
+            <id>https://yeahqing.cn/posts/redis-install-note/</id>
+            <updated>2022-03-24T00:25:27&#43;08:00</updated>
+            <published>2022-03-23T23:10:47&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">WSL2-Ubuntu20.04安装Redis_6.2.6</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/redis/" term="Redis" label="Redis" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/redis/" term="Redis" label="Redis" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">安装说明-Mysql_8.0.28</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/mysql-install-note/" />
+            <id>https://yeahqing.cn/posts/mysql-install-note/</id>
+            <updated>2022-03-24T00:25:21&#43;08:00</updated>
+            <published>2022-03-23T22:34:16&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">WSL2中Ubuntu20.04安装Mysql8.0.28记录</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/mysql/" term="Mysql" label="Mysql" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/mysql/" term="Mysql" label="Mysql" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Git Submodule使用记录</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/git-submodule-note/" />
+            <id>https://yeahqing.cn/posts/git-submodule-note/</id>
+            <updated>2022-03-24T00:25:03&#43;08:00</updated>
+            <published>2022-03-23T21:25:23&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">git submodule的添加、更新和删除</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/git/" term="Git" label="Git" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/git/" term="Git" label="Git" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>
