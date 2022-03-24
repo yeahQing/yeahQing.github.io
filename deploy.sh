@@ -2,12 +2,13 @@
 source ~/.proxyrc
 echo $http_proxy
 
+sleep 1s
+
 ROOT_HOME="${HOME}/go/src/blog/"
 DOMAIN_NAME="yeahqing.cn"
 
 cd ${ROOT_HOME}
 
-# pwd
 
 if [ ! -d docs ]; then
     echo "error: docs not found!"
@@ -21,10 +22,8 @@ hugo --theme=meme --baseUrl="https://yeahqing.cn/"
 CNAME_FILE_PATH="docs/CNAME"
 touch ${CNAME_FILE_PATH}
 echo ${DOMAIN_NAME} > ${CNAME_FILE_PATH}
-# cat ${CNAME_FILE_PATH}
 
 echo "generate CNAME done"
-# git status
 
 git add .
 
