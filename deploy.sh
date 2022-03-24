@@ -24,6 +24,9 @@ echo ${DOMAIN_NAME} > ${CNAME_FILE_PATH}
 echo "generate CNAME done"
 # git status
 
+source '~/.proxyrc'
+echo ${http_proxy}
+
 git add .
 git status
 sleep 1s
