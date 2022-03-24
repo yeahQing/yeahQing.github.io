@@ -1,6 +1,6 @@
 #!/bin/bash
 source ~/.proxyrc
-echo $http_proxy
+echo "using vpn through $http_proxy"
 
 sleep 1s
 

@@ -12,6 +12,10 @@ series: ["Golang学习笔记"]
 ## 基础篇
 
 1. Go语言基础
+
+- [Go程序设计语言 第一章总结](https://yeahqing.cn/posts/go-learn-ch1/)
+- [Go程序设计语言 第二章总结](https://yeahqing.cn/posts/go-learn-ch2/)
+
 2. Linux(常用的命令和工具, netstat、ps、top, shell编程)
 3. Mysql
 4. Redis
