@@ -1,5 +1,5 @@
 #!/bin/bash
-# source ~/.proxyrc
+source ~/.proxyrc
 echo $http_proxy
 
 ROOT_HOME="${HOME}/go/src/blog/"
