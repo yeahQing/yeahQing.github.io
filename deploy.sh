@@ -32,12 +32,14 @@ git status
 sleep 1s
 
 MSG="auto commit at "$(date "+%Y-%m-%d %H:%M:%S")
-echo ${MSG}
+
 
 if  [ ! "$1" ]; then
     git commit -m "${MSG}"
+    echo ${MSG}
 else
     git commit -m "$1"
+    echo "commit with msg $1"
 fi
 
 sleep 1s
