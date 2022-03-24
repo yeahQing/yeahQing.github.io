@@ -1,4 +1,5 @@
 #!/bin/bash
+# source can be used with chmod u+x deploy.sh && ./deploy.sh
 source ~/.proxyrc
 echo "using vpn through $http_proxy"
 
