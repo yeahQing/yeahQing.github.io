@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/.proxyrc
+# source ~/.proxyrc
 echo $http_proxy
 
 ROOT_HOME="${HOME}/go/src/blog/"
@@ -10,10 +10,10 @@ cd ${ROOT_HOME}
 # pwd
 
 if [ ! -d docs ]; then
-echo "error: docs not found!"
+    echo "error: docs not found!"
 else
-rm -r docs
-echo "clean successfully"
+    rm -r docs
+    echo "clean successfully"
 fi
 
 hugo --theme=meme --baseUrl="https://yeahqing.cn/"
@@ -26,17 +26,20 @@ echo ${DOMAIN_NAME} > ${CNAME_FILE_PATH}
 echo "generate CNAME done"
 # git status
 
-
-
 git add .
+
 git status
+
 sleep 1s
 
 MSG="auto commit at "$(date "+%Y-%m-%d %H:%M:%S")
 echo ${MSG}
 
-git commit -m "$1"
-sleep 1s
-# echo "auto commit at "$(date "+%Y-%m-%d %H:%M:%S")
-git push origin hugo
+if  [ ! "$1" ]; then
+    git commit -m "${MSG}"
+else
+    git commit -m "$1"
+fi
 
+sleep 1s
+git push origin hugo
