@@ -1,5 +1,6 @@
 #!/bin/bash
 source ~/.proxyrc
+echo $http_proxy
 
 ROOT_HOME="${HOME}/go/src/blog/"
 DOMAIN_NAME="yeahqing.cn"
@@ -25,7 +26,7 @@ echo ${DOMAIN_NAME} > ${CNAME_FILE_PATH}
 echo "generate CNAME done"
 # git status
 
-echo ${http_proxy}
+
 
 git add .
 git status
