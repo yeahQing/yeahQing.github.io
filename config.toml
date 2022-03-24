@@ -84,7 +84,7 @@ uglyURLs = false
         guessSyntax = false
         lineNos = true
         lineNumbersInTable = true
-        noClasses = true # 固定12行代码
+        noClasses = false # 固定12行代码
     [markup.tableOfContents]
         startLevel = 2
         endLevel = 6
@@ -497,7 +497,7 @@ uglyURLs = false
     enableDarkMode = true
 
     # 默认模式
-    defaultTheme = "dark"
+    defaultTheme = "light"
     # 说明：light（浅色模式）或 dark（深色模式）
 
     # 是否隐藏模式切换开关
@@ -1243,7 +1243,7 @@ uglyURLs = false
     # 年份与作者之间的图标，留空（""）则无
     iconBetweenYearAndAuthor = "heart"
     # 图标颜色
-    iconColor = "#f06292"
+    iconColor = "#a1c4fd"
     # 是否开启图标的跳动效果
     iconAnimation = true
 

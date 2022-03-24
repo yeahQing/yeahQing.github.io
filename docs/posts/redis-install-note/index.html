@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8" />
 
-    <meta name="generator" content="Hugo 0.96.0-DEV" /><meta name="theme-color" content="#16171d" />
+    <meta name="generator" content="Hugo 0.96.0-DEV" /><meta name="theme-color" content="#fff" />
     <meta name="color-scheme" content="light dark">
 
     
@@ -17,7 +17,7 @@
 
     <title>安装说明-Redis_6.2.6 | 晔清的博客</title>
 
-    <link rel="stylesheet" href="/css/meme.min.654c671edf53ba0f2f58e728d9f7d0392c2c47fb71cd067d988396a710097896.css"/>
+    <link rel="stylesheet" href="/css/meme.min.cbe4a5e723e2fbc4657b7bec19f76e685c45b45f81190925c0fe5fcbb86e84b0.css"/>
 
     
     
@@ -253,393 +253,393 @@
 <p>我们从redis官网下载redis的压缩吧redis.tar.gz</p>
 <p>我们使用wget下载,
 <a href="https://redis.io/" target="_blank" rel="noopener">redis官网</a></p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://download.redis.io/releases/redis-6.2.6.tar.gz
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://download.redis.io/releases/redis-6.2.6.tar.gz
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>之后使用解压缩命令解压缩.gz文件</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tar -zxvf redis-6.2.6.tar.gz
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>rm redis-6.2.6.tar.gz
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -zxvf redis-6.2.6.tar.gz
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">rm redis-6.2.6.tar.gz
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们可以在解压完了之后直接删除压缩包</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 我们可以将这个文件夹移动到/usr/local/redis下</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>mkdir /usr/local/redis <span style="color:#75715e"># 具体按你的喜好就可以</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>cp redis-6.2.6 /usr/local/redis/
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>cd /usr/local/redis/redis-6.2.6
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 我们可以将这个文件夹移动到/usr/local/redis下</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir /usr/local/redis <span class="c1"># 具体按你的喜好就可以</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cp redis-6.2.6 /usr/local/redis/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/redis/redis-6.2.6
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><h2 id="编译安装"><a href="#编译安装" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:编译安装" class="headings">编译安装</a></h2>
 <p>在<code>/usr/local/redis/redis-6.2.6</code>这个目录下我们可以使用make命令进行安装，如果没有gcc和make的环境，可以先安装一下。</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install gcc make
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install gcc make
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们使用make命令安装完之后，<code>make test</code>是可选项，如果想单元测试一下可以执行，不过需要安装tcl,
 使用命令安装:
 <code>sudo apt install tcl</code></p>
 <p>我们不需要进入src目录执行make install，直接根目录执行就行，具体可以在根目录下的Makefile中看到原因, 然后执行make install这个命令后，默认会把它的可执行二进制文件安装到<code>/usr/local/bin</code>下，这个具体是在src目录下的Makefile中定义的前缀变量PREFIX, 我们也可以在make install 命令后面指定PREFIX=[/path/to/your/dir/]</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Makefile" data-lang="Makefile"><span style="display:flex;"><span><span style="color:#75715e"># Top level makefile, the real shit is at src/Makefile
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">default</span><span style="color:#f92672">:</span> all
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.DEFAULT</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        cd src <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">$(</span>MAKE<span style="color:#66d9ef">)</span> $@
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">install</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        cd src <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">$(</span>MAKE<span style="color:#66d9ef">)</span> $@
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span> install
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Makefile" data-lang="Makefile"><span class="line"><span class="cl"><span class="c"># Top level makefile, the real shit is at src/Makefile
+</span></span></span><span class="line"><span class="cl"><span class="c"></span>
+</span></span><span class="line"><span class="cl"><span class="nf">default</span><span class="o">:</span> <span class="n">all</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.DEFAULT</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">cd</span> src <span class="o">&amp;&amp;</span> <span class="k">$(</span>MAKE<span class="k">)</span> <span class="nv">$@</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">install</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">cd</span> src <span class="o">&amp;&amp;</span> <span class="k">$(</span>MAKE<span class="k">)</span> <span class="nv">$@</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">install</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>可以看到根目录执行的make命令和make install命令，都是进入src目录执行的，其实和我们直接进入src目录执行一样。</p>
 <h2 id="配置运行"><a href="#配置运行" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:配置运行" class="headings">配置运行</a></h2>
 <p>我们可以在根目录下找一个<code>redis.conf</code>文件，这个文件是启动redis-server的配置文件</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ls -l | grep redis.conf
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls -l <span class="p">|</span> grep redis.conf
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们可以什么都不改，直接按默认配置来启动就可以</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>redis-server redis.conf
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">redis-server redis.conf
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>之后使用客户端测试启动是否正常, 看到PONG就是安装成功了</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 终端输入redis-cli就可以进入本地的客户端，或者指定-h 127.0.0.1 -p 6379</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 你也可以根据你的服务器来配置</span>
-</span></span><span style="display:flex;"><span>redis-cli
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>127.0.0.1:6379&gt; ping
-</span></span><span style="display:flex;"><span>PONG
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 终端输入redis-cli就可以进入本地的客户端，或者指定-h 127.0.0.1 -p 6379</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 你也可以根据你的服务器来配置</span>
+</span></span><span class="line"><span class="cl">redis-cli
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">127.0.0.1:6379&gt; ping
+</span></span><span class="line"><span class="cl">PONG
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们使用<code>redis-cli shutdown</code>来关闭redis-server</p>
 <p>同时，我们也可以使用kill命令给进程发送中断信号
 -9和-15就是31个unix的不安全的信号值。</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># -9是无条件中断</span>
-</span></span><span style="display:flex;"><span>kill -9 <span style="color:#f92672">[</span>redis_pid<span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 一般用-15也可以</span>
-</span></span><span style="display:flex;"><span>kill -15 <span style="color:#f92672">[</span>redis_pid<span style="color:#f92672">]</span>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># -9是无条件中断</span>
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -9 <span class="o">[</span>redis_pid<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 一般用-15也可以</span>
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> -15 <span class="o">[</span>redis_pid<span class="o">]</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><h2 id="配置后台启动"><a href="#配置后台启动" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:配置后台启动" class="headings">配置后台启动</a></h2>
 <p>redis一般肯定是运行在服务器上的，总不能让它一直前台运行吧，感觉也可以?我每次都是开两个终端测试的，不过没有试过服务器的环境。</p>
 <p>我们直接修改redis.conf文件就行，</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 使用vim打开redis.conf，然后在冒号模式/命令模式下使用斜杠`/daemonize`</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 可以在vim的命令模式下使用n和N进行下一个和上一个匹配的移动</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 修改这个键的值为yes即可</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>daemonize yes
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 使用vim打开redis.conf，然后在冒号模式/命令模式下使用斜杠`/daemonize`</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 可以在vim的命令模式下使用n和N进行下一个和上一个匹配的移动</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 修改这个键的值为yes即可</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">daemonize yes
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>查看是否配置后台启动成功</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ps -aux | grep redis
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ps -aux <span class="p">|</span> grep redis
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><h2 id="使用service快捷启动"><a href="#使用service快捷启动" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:使用service快捷启动" class="headings">使用service快捷启动</a></h2>
 <p>我们可以通过<code>sudo service redis start</code>来启动redis</p>
 <p>首先我们进入redis的utils目录</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /usr/local/redis/redis-6.2.6/utils
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /usr/local/redis/redis-6.2.6/utils
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们可以找到<code>init</code>两个文件</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ls | grep redis_init_script
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>redis_init_script
-</span></span><span style="display:flex;"><span>redis_init_script.tpl
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls <span class="p">|</span> grep redis_init_script
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">redis_init_script
+</span></span><span class="line"><span class="cl">redis_init_script.tpl
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>第一个文件中只有start和stop的shell脚本，第二个文件中有start、stop、restart、status的shell脚本，但是缺少了一些路径变量的定义，我们可以将这个两个文件结合一下，就是把自己需要的东西拼凑以下。</p>
 <p>我这里贴一下我的配置，这里主要是要配置一下自己的路径，配置文件的路径也需要修改一下，改成自己的就行。<strong>这里需要注意，我们最好使用sudo命令启动，不然pid没法生成在/var/run/下</strong>。</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Simple Redis init.d script conceived to work on Linux systems</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># as it does use of the /proc filesystem.</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### BEGIN INIT INFO</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Provides:     redis_6379</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default-Start:        2 3 4 5</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default-Stop:         0 1 6</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Short-Description:    Redis data structure server</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Description:          Redis data structure server. See https://redis.io</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">### END INIT INFO</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>REDISPORT<span style="color:#f92672">=</span><span style="color:#ae81ff">6379</span>
-</span></span><span style="display:flex;"><span>EXEC<span style="color:#f92672">=</span>/usr/local/bin/redis-server
-</span></span><span style="display:flex;"><span>CLIEXEC<span style="color:#f92672">=</span>/usr/local/bin/redis-cli
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>PIDFILE<span style="color:#f92672">=</span>/var/run/redis_<span style="color:#e6db74">${</span>REDISPORT<span style="color:#e6db74">}</span>.pid
-</span></span><span style="display:flex;"><span>CONF<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/etc/redis/</span><span style="color:#e6db74">${</span>REDISPORT<span style="color:#e6db74">}</span><span style="color:#e6db74">.conf&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> in
-</span></span><span style="display:flex;"><span>    start<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f $PIDFILE <span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;</span>$PIDFILE<span style="color:#e6db74"> exists, process is already running or crashed&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;Starting Redis server...&#34;</span>
-</span></span><span style="display:flex;"><span>            $EXEC $CONF
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    stop<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -f $PIDFILE <span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;</span>$PIDFILE<span style="color:#e6db74"> does not exist, process is not running&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>            PID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>cat $PIDFILE<span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;Stopping ...&#34;</span>
-</span></span><span style="display:flex;"><span>            $CLIEXEC -p $REDISPORT shutdown
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> -x /proc/<span style="color:#e6db74">${</span>PID<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">do</span>
-</span></span><span style="display:flex;"><span>                echo <span style="color:#e6db74">&#34;Waiting for Redis to shutdown ...&#34;</span>
-</span></span><span style="display:flex;"><span>                sleep <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">done</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;Redis stopped&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    status<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        PID<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>cat $PIDFILE<span style="color:#66d9ef">)</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> ! -x /proc/<span style="color:#e6db74">${</span>PID<span style="color:#e6db74">}</span> <span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#39;Redis is not running&#39;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;Redis is running (</span>$PID<span style="color:#e6db74">)&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    restart<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        $0 stop
-</span></span><span style="display:flex;"><span>        $0 start
-</span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span>    *<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;Please use start, stop, restart or status as first argument&#34;</span>
-</span></span><span style="display:flex;"><span>        ;;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">esac</span>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Simple Redis init.d script conceived to work on Linux systems</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># as it does use of the /proc filesystem.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### BEGIN INIT INFO</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Provides:     redis_6379</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Default-Start:        2 3 4 5</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Default-Stop:         0 1 6</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Short-Description:    Redis data structure server</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Description:          Redis data structure server. See https://redis.io</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### END INIT INFO</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">REDISPORT</span><span class="o">=</span><span class="m">6379</span>
+</span></span><span class="line"><span class="cl"><span class="nv">EXEC</span><span class="o">=</span>/usr/local/bin/redis-server
+</span></span><span class="line"><span class="cl"><span class="nv">CLIEXEC</span><span class="o">=</span>/usr/local/bin/redis-cli
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">PIDFILE</span><span class="o">=</span>/var/run/redis_<span class="si">${</span><span class="nv">REDISPORT</span><span class="si">}</span>.pid
+</span></span><span class="line"><span class="cl"><span class="nv">CONF</span><span class="o">=</span><span class="s2">&#34;/etc/redis/</span><span class="si">${</span><span class="nv">REDISPORT</span><span class="si">}</span><span class="s2">.conf&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> in
+</span></span><span class="line"><span class="cl">    start<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">[</span> -f <span class="nv">$PIDFILE</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">then</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$PIDFILE</span><span class="s2"> exists, process is already running or crashed&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;Starting Redis server...&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$EXEC</span> <span class="nv">$CONF</span>
+</span></span><span class="line"><span class="cl">        <span class="k">fi</span>
+</span></span><span class="line"><span class="cl">        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    stop<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">[</span> ! -f <span class="nv">$PIDFILE</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">then</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$PIDFILE</span><span class="s2"> does not exist, process is not running&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">PID</span><span class="o">=</span><span class="k">$(</span>cat <span class="nv">$PIDFILE</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;Stopping ...&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">$CLIEXEC</span> -p <span class="nv">$REDISPORT</span> shutdown
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="o">[</span> -x /proc/<span class="si">${</span><span class="nv">PID</span><span class="si">}</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">            <span class="k">do</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">echo</span> <span class="s2">&#34;Waiting for Redis to shutdown ...&#34;</span>
+</span></span><span class="line"><span class="cl">                sleep <span class="m">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">done</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;Redis stopped&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">fi</span>
+</span></span><span class="line"><span class="cl">        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    status<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">PID</span><span class="o">=</span><span class="k">$(</span>cat <span class="nv">$PIDFILE</span><span class="k">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">[</span> ! -x /proc/<span class="si">${</span><span class="nv">PID</span><span class="si">}</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">then</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s1">&#39;Redis is not running&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">echo</span> <span class="s2">&#34;Redis is running (</span><span class="nv">$PID</span><span class="s2">)&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">fi</span>
+</span></span><span class="line"><span class="cl">        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    restart<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">$0</span> stop
+</span></span><span class="line"><span class="cl">        <span class="nv">$0</span> start
+</span></span><span class="line"><span class="cl">        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl">    *<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;Please use start, stop, restart or status as first argument&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">;;</span>
+</span></span><span class="line"><span class="cl"><span class="k">esac</span>
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们将这个文件拷贝到<code>/etc/init.d/</code>下</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 这里的名称尽量好记一点，因为后面会用到，因此我把它重命名为了redis</span>
-</span></span><span style="display:flex;"><span>cp redis_init_script redis 
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 这里的名称尽量好记一点，因为后面会用到，因此我把它重命名为了redis</span>
+</span></span><span class="line"><span class="cl">cp redis_init_script redis 
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><h2 id="测试启动"><a href="#测试启动" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:测试启动" class="headings">测试启动</a></h2>
 <p>配置到这里我们就可以使用<code>sudo service redis start</code>来启动，</p>
 <p>查看是否启动成功</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>ps -aux | grep redis
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 使用-ef也可以，只不过是关注点不同，-ef不显示CPU、内存、虚拟空间和实际空间使用情况</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 不过这些我们可能不会通过ps去查看就对了，肯定使用top实时看会好点</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 相对的-ef命令可以查看到PPID就是父进程的id</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>ps -ef | grep redis
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ps -aux <span class="p">|</span> grep redis
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用-ef也可以，只不过是关注点不同，-ef不显示CPU、内存、虚拟空间和实际空间使用情况</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 不过这些我们可能不会通过ps去查看就对了，肯定使用top实时看会好点</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 相对的-ef命令可以查看到PPID就是父进程的id</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ps -ef <span class="p">|</span> grep redis
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div><p>我们可以看到redis进程运行在了<code>127.0.0.1:6379</code>端口下</p>
 <h2 id="其他命令"><a href="#其他命令" class="anchor-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon anchor-icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/></svg></a><a href="#contents:其他命令" class="headings">其他命令</a></h2>
 <p>我们可以使用其他命令来快捷的操作</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<div class="table-container"><table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+<div class="highlight"><div class="chroma">
+<div class="table-container"><table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 关闭</span>
-</span></span><span style="display:flex;"><span>sudo service redis stop
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 重启</span>
-</span></span><span style="display:flex;"><span>sudo service redis restart
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看状态</span>
-</span></span><span style="display:flex;"><span>sudo service redis status
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 关闭</span>
+</span></span><span class="line"><span class="cl">sudo service redis stop
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 重启</span>
+</span></span><span class="line"><span class="cl">sudo service redis restart
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看状态</span>
+</span></span><span class="line"><span class="cl">sudo service redis status
 </span></span></code></pre></td></tr></table></div>
 </div>
 </div>

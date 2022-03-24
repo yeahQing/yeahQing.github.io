@@ -23,7 +23,7 @@ git submodule add --depth 1 https://github.com/reuixiy/hugo-theme-meme.git theme
 
 使用上述命令后, 第一次使用会生成一个.gitmodules的文件,里面记录了子模块的路径和git仓库地址
 
-```toml
+```shell
 [submodule "themes/meme"]
 	path = themes/meme
 	url = https://github.com/reuixiy/hugo-theme-meme.git

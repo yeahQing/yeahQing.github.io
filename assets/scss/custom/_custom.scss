@@ -1,10 +1,136 @@
-.container {
-    background: no-repeat url("/images/bg006.jpg");
+// .container {
+    // background:
+    //   radial-gradient(circle at 50% 0,
+    //     rgba(255,0,0,.5),
+    //     rgba(255,0,0,0) 70.71%),
+    //   radial-gradient(circle at 6.7% 75%,
+    //     rgba(0,0,255,.5),
+    //     rgba(0,0,255,0) 70.71%),
+    //   radial-gradient(circle at 93.3% 75%,
+    //     rgba(0,255,0,.5),
+    //     rgba(0,255,0,0) 70.71%) beige;
+    // background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    // background: no-repeat url("/images/bg006.jpg");
     /* 背景图片显示尺寸(放大/缩小背景图) */
     // background-size: 200px 200px;  /* 通过像素设置 */
-    background-size: 100% 100%;    /* 通过百分比设置 */
+    // background-size: 100% 100%;    /* 通过百分比设置 */
     // background-size: cover;      /* 覆盖:图片成比例填满盒子。可用于适配 */
     // background-size: contain;     /* 包含:图片成比例放大,可能不会填满盒子。可用于适配  */
+// }
+
+// https://codyhouse.co/ds/globals/colors
+// https://github.com/dracula/dracula-theme/
+
+@mixin dark-theme {
+    --theme-name: "dark";
+    @include defineColorHSL(--color-primary, $primaryColorDarkH, $primaryColorDarkS, $primaryColorDarkL);
+    @include defineColorHSL(--color-bg, 231, 14%, 10%);
+    @include defineColorHSL(--color-contrast-lower, 230, 12%, 18%);
+    @include defineColorHSL(--color-contrast-low, 240, 2%, 37%);
+    @include defineColorHSL(--color-contrast-medium, 80, 2%, 69%);
+    @include defineColorHSL(--color-contrast-high, 69, 9%, 84%);
+    @include defineColorHSL(--color-contrast-higher, 60, 6%, 90%);
+    .theme-icon-light {
+        display: none;
+    }
+    .theme-icon-dark {
+        display: inline-block;
+    }
+    img {
+        filter: brightness(75%);
+    }
+    .container {
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    }
+
+    @if ($enableHighlight) {
+        /* https://xyproto.github.io/splash/docs/all.html */
+        /* Color values matching dracula style */
+
+        --chroma-line-numbers-background: #ffffcc;
+        --chroma-line-numbers-color: #7f7f7f;
+        --chroma-keyword-color: #ff79c6;
+        --chroma-name-color: #8be9fd;
+        --chroma-attribute-color: #50fa7b;
+        --chroma-literal-color: #f1fa8c;
+        --chroma-number-color: #bd93f9;
+        --chroma-comment-color: #6272a4;
+        --chroma-deleted-color: #8b080b;
+        --chroma-output-color: #44475a;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        @include dark-theme;
+    }
+}
+
+@if ($defaultTheme == "dark") {
+    :root {
+        @include dark-theme;
+    }
+} @else {
+    :root[data-theme="dark"] {
+        @include dark-theme;
+    }
+}
+
+// https://codyhouse.co/ds/globals/colors
+
+@mixin light-theme {
+    --theme-name: "light";
+    @include defineColorHSL(--color-primary, $primaryColorLightH, $primaryColorLightS, $primaryColorLightL);
+    @include defineColorHSL(--color-bg, 0, 0%, 100%);
+    @include defineColorHSL(--color-contrast-lower, 0, 0%, 95%);
+    @include defineColorHSL(--color-contrast-low, 240, 1%, 83%);
+    @include defineColorHSL(--color-contrast-medium, 240, 1%, 48%);
+    @include defineColorHSL(--color-contrast-high, 240, 4%, 20%);
+    @include defineColorHSL(--color-contrast-higher, 240, 8%, 12%);
+    .theme-icon-light {
+        display: inline-block;
+    }
+    .theme-icon-dark {
+        display: none;
+    }
+    img {
+        filter: none;
+    }
+    .container {
+        background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%); background-blend-mode: normal,color-burn;
+    }
+
+    @if ($enableHighlight) {
+        /* https://xyproto.github.io/splash/docs/all.html */
+        /* Color values matching manni style */
+
+        --chroma-line-numbers-background: #ffffcc;
+        --chroma-line-numbers-color: #7f7f7f;
+        --chroma-keyword-color: #006699;
+        --chroma-name-color: #9999ff;
+        --chroma-attribute-color: #330099;
+        --chroma-literal-color: #cc3300;
+        --chroma-number-color: #ff6600;
+        --chroma-comment-color: #0099ff;
+        --chroma-deleted-color: #ffcccc;
+        --chroma-output-color: #aaaaaa;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]) {
+        @include light-theme;
+    }
+}
+
+@if ($defaultTheme == "light") {
+    :root {
+        @include light-theme;
+    }
+} @else {
+    :root[data-theme="light"] {
+        @include light-theme;
+    }
 }
 
 .header {
