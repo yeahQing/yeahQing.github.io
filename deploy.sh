@@ -1,5 +1,6 @@
 #!/bin/bash
 # source can be used with chmod u+x deploy.sh && ./deploy.sh
+# if token expired, use gh auth login
 source ~/.proxyrc
 echo "using vpn through $http_proxy"
 
