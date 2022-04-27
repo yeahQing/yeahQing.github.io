@@ -2,7 +2,7 @@
 # 站点配置
 # 部署: hugo --theme=meme --baseUrl="https://yeahqing.cn/"
 baseURL = "https://yeahqing.cn/"
-title = "晔清的博客"
+title = "YeahQing`s Blog"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 publishDir = "docs"
@@ -198,25 +198,25 @@ uglyURLs = false
         # post = "home"
     [[menu.main]]
         pageref = "/posts/"
-        name = "文章"
+        name = "Posts"
         weight = 2
         pre = "internal"
         # post = "archive"
     [[menu.main]]
         pageref = "/categories/"
-        name = "分类"
+        name = "Categories"
         weight = 3
         pre = "internal"
         # post = "th"
     [[menu.main]]
         pageref = "/tags/"
-        name = "标签"
+        name = "Tags"
         weight = 4
         pre = "internal"
         # post = "tags"
     [[menu.main]]
         pageref = "/about/"
-        name = "关于"
+        name = "About"
         weight = 5
         pre = "internal"
         # post = "user-circle"

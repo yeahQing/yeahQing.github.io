@@ -7,10 +7,10 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>晔清的博客</title>
+        <title>YeahQing`s Blog</title>
         <link>https://yeahqing.cn/</link>
         <description>晔清的博客, 记录学习编程过程中的问题</description>
-        <generator>Hugo 0.96.0-DEV https://gohugo.io/</generator>
+        <generator>Hugo 0.98.0-DEV https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,88 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Thu, 24 Mar 2022 12:16:35 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 27 Apr 2022 22:59:41 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yeahqing.cn/rss.xml" />
         
+        
+            <item>
+                <title>Hugo版本升级记录</title>
+                <link>https://yeahqing.cn/posts/hugo-update-note/</link>
+                <guid isPermaLink="true">https://yeahqing.cn/posts/hugo-update-note/</guid>
+                <pubDate>Wed, 27 Apr 2022 22:41:58 &#43;0800</pubDate>
+                
+                    <author>kounid5@gmail.com (YeahQing)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>Hugo版本升级记录</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/categories/hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/hugo/">Hugo</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Golang的版本升级方法</title>
+                <link>https://yeahqing.cn/posts/go-update-note/</link>
+                <guid isPermaLink="true">https://yeahqing.cn/posts/go-update-note/</guid>
+                <pubDate>Wed, 27 Apr 2022 21:34:34 &#43;0800</pubDate>
+                
+                    <author>kounid5@gmail.com (YeahQing)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>将Golang从1.18升级到1.18.1, 并记录Golang的版本升级方法。</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/categories/golang/">Golang</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/golang/">Golang</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Go程序设计语言-第二章</title>
