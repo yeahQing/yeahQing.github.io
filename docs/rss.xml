@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 27 Apr 2022 23:06:59 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 27 Apr 2022 23:09:12 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yeahqing.cn/rss.xml" />
         
@@ -68,7 +68,7 @@
             </item>
         
             <item>
-                <title>Golang的版本升级方法</title>
+                <title>Golang版本升级记录</title>
                 <link>https://yeahqing.cn/posts/go-update-note/</link>
                 <guid isPermaLink="true">https://yeahqing.cn/posts/go-update-note/</guid>
                 <pubDate>Wed, 27 Apr 2022 21:34:34 &#43;0800</pubDate>

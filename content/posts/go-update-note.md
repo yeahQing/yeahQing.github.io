@@ -1,5 +1,5 @@
 ---
-title: "Golang的版本升级方法"
+title: "Golang版本升级记录"
 date: 2022-04-27T21:34:34+08:00
 draft: false
 summary: "将Golang从1.18升级到1.18.1, 并记录Golang的版本升级方法。"
