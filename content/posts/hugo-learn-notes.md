@@ -1,7 +1,7 @@
 ---
 title: "Hugo命令备忘录"
 date: 2022-09-23T00:57:37+08:00
-draft: true
+draft: false
 summary: "记录一下Hugo的常用命令"
 toc: true
 categories: ["Hugo"]
