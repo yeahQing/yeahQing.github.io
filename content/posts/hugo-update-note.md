@@ -17,31 +17,31 @@ series: ["Hugo使用笔记"]
 
 Hugo依赖Go, 因此如果没有安装Go的环境, 需要先安装Go.
 
-## 安装Hugo(更新同理)
-
 ## 注意
 
 Hugo在v0.103.0更新了文件命名方式, 现在全部都以GOOS/GOARCH为准，也就是GO环境配置里OS和ARCH是什么就是什么, 比如64位就是amd64, Linux就是linux。为了兼容，新版本还存在部分之前的命名方式的文件, 这里我们最好选择新的命名方式命名的文件，比如hugo_0.103.1_linux-amd64.tar.gz，而不是hugo_0.103.1_Linux-64bit.tar.gz
 。
 
+## 安装Hugo(更新同理)
+
+> 安装Hugo有两种方式，任选一种即可。
 
 ### 二进制方法
 
-我们可以在[HugoGithub仓库](https://github.com/gohugoio/hugo)中看到详细的安装说明。我之前安装使用的是二进制文件的安装方式, 就是直接下载编译好的对应平台的二进制文件, 并将其移动到go的bin目录下即可。我的目录是`/home/yeahqing/go/bin`, 具体需要根据大家的设置来。
+我们可以在[Hugo Github仓库](https://github.com/gohugoio/hugo)中看到详细的安装说明。我之前安装使用的是二进制文件的安装方式, 就是直接下载编译好的对应平台的二进制文件, 并将其移动到go的bin目录下即可。我的目录是`/home/yeahqing/go/bin`, 具体需要根据大家的设置来。
 
 ```shell
-
 # 下载二进制压缩包, 这里选择对应版本的就可以
-wget https://github.com/gohugoio/hugo/releases/download/v0.103.1/hugo_0.103.1_linux-amd64.tar.gz
+wget https://github.com/gohugoio/hugo/releases/download/v0.103.1/hugo_extended_0.103.1_linux-amd64.tar.gz
 
 # 解压缩部分文件到指定目录下，这里我们只将压缩包里的hugo解压缩到go/bin目录下
-tar -zxvf hugo_0.103.1_linux-amd64.tar.gz -C go/bin hugo
+tar -zxvf hugo_extended_0.103.1_linux-amd64.tar.gz -C go/bin hugo
 
 # 验证安装是否成功
 hugo version
 
 # output
-# hugo v0.103.1-b665f1e8f16bf043b9d3c087a60866159d71b48d linux/amd64 BuildDate=2022-09-18T13:19:01Z VendorInfo=gohugoio
+# hugo v0.103.1-b665f1e8f16bf043b9d3c087a60866159d71b48d+extended linux/amd64 BuildDate=2022-09-18T13:19:01Z VendorInfo=gohugoio
 ```
 
 > 如果主题需要使用scss的话, 就下载extended版本的, 如果不需要就下载普通版本
@@ -89,7 +89,7 @@ go install完成后, 就会在`/home/yeahqing/go/bin`下生成`hugo`的二进制
 我们可以使用`hugo version`检测hugo版本是否安装成功
 
 ```bash
-hugo v0.103.1-b665f1e8f16bf043b9d3c087a60866159d71b48d linux/amd64 BuildDate=2022-09-18T13:19:01Z VendorInfo=gohugoio
+hugo v0.103.1-b665f1e8f16bf043b9d3c087a60866159d71b48d+extended linux/amd64 BuildDate=2022-09-18T13:19:01Z VendorInfo=gohugoio
 ```
 
 ## 参考

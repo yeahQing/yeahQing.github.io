@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">YeahQing`s Blog</title>
     <subtitle type="html">晔清的博客, 记录学习编程过程中的问题</subtitle>
-    <updated>2022-09-23T01:26:39&#43;08:00</updated>
+    <updated>2022-09-23T01:38:58&#43;08:00</updated>
     <id>https://yeahqing.cn/</id>
     <link rel="alternate" type="text/html" href="https://yeahqing.cn/" />
     <link rel="self" type="application/atom&#43;xml" href="https://yeahqing.cn/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Hugo命令备忘录</title>
             <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/hugo-learn-notes/" />
             <id>https://yeahqing.cn/posts/hugo-learn-notes/</id>
-            <updated>2022-09-23T01:26:33&#43;08:00</updated>
+            <updated>2022-09-23T01:31:15&#43;08:00</updated>
             <published>2022-09-23T00:57:37&#43;08:00</published>
             <author>
                     <name>YeahQing</name>
@@ -61,7 +61,7 @@
             <title type="text">Hugo安装以及版本升级方法</title>
             <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/hugo-update-note/" />
             <id>https://yeahqing.cn/posts/hugo-update-note/</id>
-            <updated>2022-09-23T01:05:18&#43;08:00</updated>
+            <updated>2022-09-23T01:37:17&#43;08:00</updated>
             <published>2022-04-27T22:41:58&#43;08:00</published>
             <author>
                     <name>YeahQing</name>
