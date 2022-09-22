@@ -10,7 +10,7 @@
         <title>YeahQing`s Blog</title>
         <link>https://yeahqing.cn/</link>
         <description>晔清的博客, 记录学习编程过程中的问题</description>
-        <generator>Hugo 0.98.0-DEV https://gohugo.io/</generator>
+        <generator>Hugo 0.103.1 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,13 +23,13 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 27 Apr 2022 23:09:12 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 23 Sep 2022 01:24:05 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yeahqing.cn/rss.xml" />
         
         
             <item>
-                <title>Hugo版本升级记录</title>
+                <title>Hugo安装以及版本升级方法</title>
                 <link>https://yeahqing.cn/posts/hugo-update-note/</link>
                 <guid isPermaLink="true">https://yeahqing.cn/posts/hugo-update-note/</guid>
                 <pubDate>Wed, 27 Apr 2022 22:41:58 &#43;0800</pubDate>
@@ -37,7 +37,7 @@
                     <author>kounid5@gmail.com (YeahQing)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                <description>Hugo版本升级记录</description>
+                <description>Hugo安装以及版本升级方法</description>
                 
                 
                 
