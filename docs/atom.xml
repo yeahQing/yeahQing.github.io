@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">YeahQing`s Blog</title>
     <subtitle type="html">晔清的博客, 记录学习编程过程中的问题</subtitle>
-    <updated>2022-09-24T22:35:38&#43;08:00</updated>
+    <updated>2022-09-24T22:37:29&#43;08:00</updated>
     <id>https://yeahqing.cn/</id>
     <link rel="alternate" type="text/html" href="https://yeahqing.cn/" />
     <link rel="self" type="application/atom&#43;xml" href="https://yeahqing.cn/atom.xml" />
@@ -16,6 +16,47 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.103.1">Hugo</generator>
+        <entry>
+            <title type="text">Java相关知识概述</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/java-learn-notes/" />
+            <id>https://yeahqing.cn/posts/java-learn-notes/</id>
+            <updated>2022-09-24T22:37:26&#43;08:00</updated>
+            <published>2022-09-24T16:58:14&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">总结Java学习的相关知识</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/java/" term="Java" label="Java" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/java/" term="Java" label="Java" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Hugo命令备忘录</title>
             <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/hugo-learn-notes/" />
