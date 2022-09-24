@@ -23,7 +23,7 @@ series: ["Golang学习笔记"]
 
 这里我们下载的是Linux版本的安装包, 压缩格式是tar.gz
 
-![Golang Version](https://raw.githubusercontent.com/yeahQing/ImgStg/main/images/202204272222008.jpg)
+![Golang Version](https://cdn.jsdelivr.net/gh/yeahqing/ImgStg@latest/images/20220924182104.png)
 
 这里我们使用wget工具下载安装包。`wget https://go.dev/dl/go1.18.1.linux-amd64.tar.gz`
 
