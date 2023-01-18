@@ -25,17 +25,37 @@ series: ["Java学习笔记"]
 
 我认为学习语言的基础，可以从学会基础的用法开始，然后通过学习算法题来巩固语言的基础。所以，在这里我也使用这样的方法来记录。
 
-
-
 ### Java进阶
 
 OOP、多线程、IO、集合、异常处理
+
+#### OOP
+
+1. 封装
+
+2. 继承
+
+3. 多态
+
+#### 多线程
+
+1. 创建线程的三种方式
+
+- 继承Thread
+
+- 实现Runnable接口
+
+- 实现Callable<>接口
+
+2. 线程的状态
+
+![](https://cdn.jsdelivr.net/gh/yeahqing/ImgStg@latest/images/202211022245768.png)
 
 ### Java高级
 
 并发编程、分布式、JUC、Netty
 
-## Java相关技术栈
+### Java相关技术栈
 
 Java目前大规模应用在Web服务器上，因此对于桌面开发而言，尽量选择其他语言，而不是Java。当然，你也可以说开发Native Android也需要用Java。
 

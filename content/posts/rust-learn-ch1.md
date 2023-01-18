@@ -1,8 +1,8 @@
 ---
-title: "Rust Learn Ch1"
+title: "Rust安装记录"
 date: 2022-10-22T10:27:32+08:00
-draft: true
-summary: "这是摘要"
+draft: false
+summary: "Rust语言安装记录"
 toc: true
 categories: ["Rust"]
 tags: ["Rust"]

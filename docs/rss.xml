@@ -10,7 +10,7 @@
         <title>YeahQing`s Blog</title>
         <link>https://yeahqing.cn/</link>
         <description>晔清的博客, 记录学习编程过程中的问题</description>
-        <generator>Hugo 0.103.1 https://gohugo.io/</generator>
+        <generator>Hugo 0.110.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,88 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 22 Oct 2022 21:31:34 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 18 Jan 2023 18:50:21 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yeahqing.cn/rss.xml" />
         
+        
+            <item>
+                <title>Linux命令汇总</title>
+                <link>https://yeahqing.cn/posts/linux-learn-ch1/</link>
+                <guid isPermaLink="true">https://yeahqing.cn/posts/linux-learn-ch1/</guid>
+                <pubDate>Wed, 18 Jan 2023 18:04:53 &#43;0800</pubDate>
+                
+                    <author>kounid5@gmail.com (YeahQing)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>Linux常用命令汇总</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/categories/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Rust安装记录</title>
+                <link>https://yeahqing.cn/posts/rust-learn-ch1/</link>
+                <guid isPermaLink="true">https://yeahqing.cn/posts/rust-learn-ch1/</guid>
+                <pubDate>Sat, 22 Oct 2022 10:27:32 &#43;0800</pubDate>
+                
+                    <author>kounid5@gmail.com (YeahQing)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>Rust语言安装记录</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/categories/rust/">Rust</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/rust/">Rust</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Java相关知识概述</title>
