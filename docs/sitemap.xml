@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yeahqing.cn/categories/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/tags/java/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/categories/java/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/posts/java-learn-day01/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/posts/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/tags/static%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/tags/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
+  </url><url>
+    <loc>https://yeahqing.cn/tags/%E5%9C%A8%E7%BB%88%E7%AB%AF%E7%BC%96%E8%AF%91java/</loc>
+    <lastmod>2023-05-13T22:07:42+08:00</lastmod>
   </url><url>
     <loc>https://yeahqing.cn/tags/linux/</loc>
     <lastmod>2023-01-18T18:50:22+08:00</lastmod>
@@ -14,15 +38,6 @@
     <loc>https://yeahqing.cn/posts/linux-learn-ch1/</loc>
     <lastmod>2023-01-18T18:50:22+08:00</lastmod>
   </url><url>
-    <loc>https://yeahqing.cn/posts/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahqing.cn/tags/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahqing.cn/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
-  </url><url>
     <loc>https://yeahqing.cn/tags/rust/</loc>
     <lastmod>2023-01-18T18:50:22+08:00</lastmod>
   </url><url>
@@ -30,12 +45,6 @@
     <lastmod>2023-01-18T18:50:22+08:00</lastmod>
   </url><url>
     <loc>https://yeahqing.cn/posts/rust-learn-ch1/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahqing.cn/tags/java/</loc>
-    <lastmod>2023-01-18T18:50:22+08:00</lastmod>
-  </url><url>
-    <loc>https://yeahqing.cn/categories/java/</loc>
     <lastmod>2023-01-18T18:50:22+08:00</lastmod>
   </url><url>
     <loc>https://yeahqing.cn/posts/java-learn-notes/</loc>

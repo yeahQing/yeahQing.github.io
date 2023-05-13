@@ -10,7 +10,7 @@
         <title>YeahQing`s Blog</title>
         <link>https://yeahqing.cn/</link>
         <description>晔清的博客, 记录学习编程过程中的问题</description>
-        <generator>Hugo 0.110.0 https://gohugo.io/</generator>
+        <generator>Hugo 0.111.3 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,61 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 13 May 2023 00:09:52 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 13 May 2023 22:08:48 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://yeahqing.cn/rss.xml" />
         
+        
+            <item>
+                <title>Java学习记录01</title>
+                <link>https://yeahqing.cn/posts/java-learn-day01/</link>
+                <guid isPermaLink="true">https://yeahqing.cn/posts/java-learn-day01/</guid>
+                <pubDate>Sat, 13 May 2023 21:04:22 &#43;0800</pubDate>
+                
+                    <author>kounid5@gmail.com (YeahQing)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                <description>记录学习java中害怕遗忘的知识点</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/categories/java/">Java</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/java/">Java</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/static%E5%85%B3%E9%94%AE%E5%AD%97/">Static关键字</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://yeahqing.cn/tags/%E5%9C%A8%E7%BB%88%E7%AB%AF%E7%BC%96%E8%AF%91java/">在终端编译java</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Linux命令汇总</title>

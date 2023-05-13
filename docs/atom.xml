@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">YeahQing`s Blog</title>
     <subtitle type="html">晔清的博客, 记录学习编程过程中的问题</subtitle>
-    <updated>2023-05-13T00:09:52&#43;08:00</updated>
+    <updated>2023-05-13T22:08:48&#43;08:00</updated>
     <id>https://yeahqing.cn/</id>
     <link rel="alternate" type="text/html" href="https://yeahqing.cn/" />
     <link rel="self" type="application/atom&#43;xml" href="https://yeahqing.cn/atom.xml" />
@@ -15,7 +15,60 @@
                 <email>kounid5@gmail.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.110.0">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.111.3">Hugo</generator>
+        <entry>
+            <title type="text">Java学习记录01</title>
+            <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/java-learn-day01/" />
+            <id>https://yeahqing.cn/posts/java-learn-day01/</id>
+            <updated>2023-05-13T22:07:42&#43;08:00</updated>
+            <published>2023-05-13T21:04:22&#43;08:00</published>
+            <author>
+                    <name>YeahQing</name>
+                    <uri>https://yeahqing.cn/</uri>
+                    <email>kounid5@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">记录学习java中害怕遗忘的知识点</summary>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/categories/java/" term="Java" label="Java" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/java/" term="Java" label="Java" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/static%E5%85%B3%E9%94%AE%E5%AD%97/" term="Static关键字" label="Static关键字" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://yeahqing.cn/tags/%E5%9C%A8%E7%BB%88%E7%AB%AF%E7%BC%96%E8%AF%91java/" term="在终端编译java" label="在终端编译java" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Linux命令汇总</title>
             <link rel="alternate" type="text/html" href="https://yeahqing.cn/posts/linux-learn-ch1/" />
